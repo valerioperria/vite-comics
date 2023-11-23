@@ -48,7 +48,7 @@ export default {
             <nav>
                 <ul>
                     <li v-for="titles in navTitles" :key="titles.title">
-                        <a href="">{{ titles.title }}</a>
+                        <a href=""><strong>{{ titles.title }}</strong></a>
                     </li>
                 </ul>
             </nav>
