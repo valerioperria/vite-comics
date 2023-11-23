@@ -58,6 +58,7 @@ export default {
 
 <style scoped lang="scss">
 @use "../style/partials/variables" as *;
+
 .container {
     width: 100%;
     height: 140px;
@@ -76,8 +77,9 @@ export default {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            &:hover{
-               border-bottom: 5px solid $primaryColor;
+
+            &:hover {
+                border-bottom: 5px solid $primaryColor;
             }
 
             a {
