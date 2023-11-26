@@ -23,8 +23,8 @@ export default {
     flex-direction: column;
 
     img {
-        width: 160px;
-        height: 160px;
+        width: 180px;
+        height: 180px;
     }
 
     span {
