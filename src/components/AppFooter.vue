@@ -45,13 +45,13 @@ export default {
 
 <style scoped lang="scss">
 @use "../style/partials/variables" as *;
+@use "../style/partials/mixins" as*;
 
 .container {
     width: 100%;
     height: 140px;
-    display: flex;
-    align-items: center;
-    padding: 0 100px;
+    @include flexCenter;
+    padding: $generalPadding;
     background-color: rgba(0, 0, 0, 0.867);
     justify-content: space-between;
 
@@ -60,11 +60,12 @@ export default {
         color: white;
         background-color: rgba(0, 0, 0, 0);
         border: 2px solid $primaryColor;
-    };
+    }
+
+    ;
 
     .follow {
-        display: flex;
-        align-items: center;
+        @include flexCenter;
 
         h3 {
             color: $primaryColor;
@@ -72,13 +73,14 @@ export default {
         }
 
         ul {
-            display: flex;
-            align-items: center;
+            @include flexCenter;
             list-style: none;
 
             li {
                 padding: 0.5rem
             }
         }
-    };
+    }
+
+    ;
 }</style>

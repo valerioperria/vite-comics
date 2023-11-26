@@ -58,6 +58,7 @@ export default {
 
 <style scoped lang="scss">
 @use "../style/partials/variables" as *;
+@use "../style/partials/mixins" as*;
 
 .container {
     width: 100%;
@@ -65,18 +66,21 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px;
+    padding: $generalPadding;
 
     ul {
         display: flex;
+        height: 140px;
 
         li {
             list-style: none;
             padding: 0 1rem;
-            height: 140px;
+            height: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 5px solid white;
+
 
             &:hover {
                 border-bottom: 5px solid $primaryColor;

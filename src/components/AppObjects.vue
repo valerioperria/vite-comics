@@ -47,26 +47,24 @@ export default {
 
 <style scoped lang="scss">
 @use "../style/partials/variables" as *;
+@use "../style/partials/mixins" as*;
 
 .container {
     background-color: $primaryColor;
     color: white;
     width: 100%;
     height: 140px;
-    padding: 0 120px;
-    display: flex;
-    align-items: center;
+    padding: 0 320px;
+    @include flexCenter;
 
     ul {
-        display: flex;
+        @include flexCenter;
         list-style-type: none;
-        align-items: center;
         justify-content: space-between;
         width: 100%;
 
         li {
-            display: flex;
-            align-items: center;
+            @include flexCenter;
 
             img {
                 height: 3rem;
@@ -74,4 +72,5 @@ export default {
             }
         }
     }
-}</style>
+}
+</style>

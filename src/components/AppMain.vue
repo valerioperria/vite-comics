@@ -69,12 +69,15 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use "../style/partials/variables" as *;
+@use "../style/partials/mixins" as*;
+
 .container {
     width: 100%;
     height: 370px;
     background-image: url(../assets/img/footer-bg.jpg);
     background-size: cover;
-    padding: 0 100px;
+    padding: $generalPadding;
     display: flex;
     justify-content: space-between;
     align-items: center;
